@@ -4,6 +4,7 @@ import "./index.css";
 // import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DashboardLayout from "@/components/layouts/dashboard-layout";
+import ContentCreate from "./components/dashboard/content-create";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   {
     path: "dashboard",
     element: <DashboardLayout />,
-    children: [{ index: true, element: <h1>Dashboard Main Page</h1> }],
+    children: [{ index: true, element: <ContentCreate/> }],
   },
 ]);
 
